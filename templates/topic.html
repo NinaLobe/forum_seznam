@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema</title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+        {% block title %}Tema{% endblock title %}
+    {% block content %}
+      <h1>Tema</h1>
+      <p class="small">ID teme: {{topic.key.id() }}
+        Ustvarjeno: {{topic.created}}
+        Spremenjeno: {{topic.updated}}</p>
+
+      <h2>Tema: {{topic.title}}</h2>
+
+      <p class="jumbotron">{{topic.content}}</p>
+
+{% endblock content %}
+
+</body>
+</html>
